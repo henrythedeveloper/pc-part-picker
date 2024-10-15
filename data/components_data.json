@@ -1,0 +1,253 @@
+{
+    "cpus": [
+      {
+        "name": "Intel Core i9-12900K",
+        "brand": "Intel",
+        "socket": "LGA1700",
+        "price": 599.99,
+        "cores": 16,
+        "threads": 24,
+        "base_clock": "3.2GHz",
+        "boost_clock": "5.2GHz"
+      },
+      {
+        "name": "AMD Ryzen 9 5950X",
+        "brand": "AMD",
+        "socket": "AM4",
+        "price": 549.99,
+        "cores": 16,
+        "threads": 32,
+        "base_clock": "3.4GHz",
+        "boost_clock": "4.9GHz"
+      },
+      {
+        "name": "Intel Core i7-12700K",
+        "brand": "Intel",
+        "socket": "LGA1700",
+        "price": 399.99,
+        "cores": 12,
+        "threads": 20,
+        "base_clock": "3.6GHz",
+        "boost_clock": "5.0GHz"
+      },
+      {
+        "name": "AMD Ryzen 7 5800X",
+        "brand": "AMD",
+        "socket": "AM4",
+        "price": 349.99,
+        "cores": 8,
+        "threads": 16,
+        "base_clock": "3.8GHz",
+        "boost_clock": "4.7GHz"
+      }
+    ],
+    "motherboards": [
+      {
+        "name": "ASUS ROG Maximus Z690 Hero",
+        "brand": "ASUS",
+        "socket": "LGA1700",
+        "chipset": "Z690",
+        "price": 599.99,
+        "ram_type": "DDR5",
+        "form_factor": "ATX"
+      },
+      {
+        "name": "MSI MAG B550 TOMAHAWK",
+        "brand": "MSI",
+        "socket": "AM4",
+        "chipset": "B550",
+        "price": 179.99,
+        "ram_type": "DDR4",
+        "form_factor": "ATX"
+      },
+      {
+        "name": "Gigabyte Z690 AORUS Elite AX",
+        "brand": "Gigabyte",
+        "socket": "LGA1700",
+        "chipset": "Z690",
+        "price": 269.99,
+        "ram_type": "DDR5",
+        "form_factor": "ATX"
+      },
+      {
+        "name": "ASUS TUF Gaming X570-PRO",
+        "brand": "ASUS",
+        "socket": "AM4",
+        "chipset": "X570",
+        "price": 219.99,
+        "ram_type": "DDR4",
+        "form_factor": "ATX"
+      }
+    ],
+    "gpus": [
+      {
+        "name": "NVIDIA GeForce RTX 3080",
+        "brand": "NVIDIA",
+        "price": 699.99,
+        "memory": "10GB GDDR6X",
+        "base_clock": "1440MHz",
+        "boost_clock": "1710MHz"
+      },
+      {
+        "name": "AMD Radeon RX 6800 XT",
+        "brand": "AMD",
+        "price": 649.99,
+        "memory": "16GB GDDR6",
+        "base_clock": "1825MHz",
+        "boost_clock": "2250MHz"
+      },
+      {
+        "name": "NVIDIA GeForce RTX 3060 Ti",
+        "brand": "NVIDIA",
+        "price": 399.99,
+        "memory": "8GB GDDR6",
+        "base_clock": "1410MHz",
+        "boost_clock": "1665MHz"
+      },
+      {
+        "name": "AMD Radeon RX 6700 XT",
+        "brand": "AMD",
+        "price": 479.99,
+        "memory": "12GB GDDR6",
+        "base_clock": "2321MHz",
+        "boost_clock": "2581MHz"
+      }
+    ],
+    "rams": [
+      {
+        "name": "Corsair Vengeance LPX 16GB",
+        "brand": "Corsair",
+        "type": "DDR4",
+        "price": 79.99,
+        "capacity": "16GB (2x8GB)",
+        "speed": "3200MHz"
+      },
+      {
+        "name": "G.SKILL Trident Z RGB 16GB",
+        "brand": "G.SKILL",
+        "type": "DDR4",
+        "price": 89.99,
+        "capacity": "16GB (2x8GB)",
+        "speed": "3600MHz"
+      },
+      {
+        "name": "Kingston FURY Beast 16GB",
+        "brand": "Kingston",
+        "type": "DDR5",
+        "price": 149.99,
+        "capacity": "16GB (2x8GB)",
+        "speed": "5200MHz"
+      },
+      {
+        "name": "Corsair Vengeance RGB Pro 32GB",
+        "brand": "Corsair",
+        "type": "DDR4",
+        "price": 169.99,
+        "capacity": "32GB (2x16GB)",
+        "speed": "3200MHz"
+      }
+    ],
+    "storage": [
+      {
+        "name": "Samsung 970 EVO Plus 1TB SSD",
+        "brand": "Samsung",
+        "type": "SSD",
+        "interface": "NVMe M.2",
+        "price": 149.99,
+        "capacity": "1TB"
+      },
+      {
+        "name": "Western Digital Blue 1TB HDD",
+        "brand": "Western Digital",
+        "type": "HDD",
+        "interface": "SATA III",
+        "price": 49.99,
+        "capacity": "1TB"
+      },
+      {
+        "name": "Crucial MX500 500GB SSD",
+        "brand": "Crucial",
+        "type": "SSD",
+        "interface": "SATA III",
+        "price": 59.99,
+        "capacity": "500GB"
+      },
+      {
+        "name": "Seagate Barracuda 2TB HDD",
+        "brand": "Seagate",
+        "type": "HDD",
+        "interface": "SATA III",
+        "price": 59.99,
+        "capacity": "2TB"
+      }
+    ],
+    "power_supplies": [
+      {
+        "name": "Corsair RM750x 750W 80+ Gold",
+        "brand": "Corsair",
+        "price": 129.99,
+        "wattage": 750,
+        "efficiency": "80+ Gold",
+        "modular": "Fully Modular"
+      },
+      {
+        "name": "EVGA SuperNOVA 650 G5 650W 80+ Gold",
+        "brand": "EVGA",
+        "price": 109.99,
+        "wattage": 650,
+        "efficiency": "80+ Gold",
+        "modular": "Fully Modular"
+      },
+      {
+        "name": "Seasonic Focus 850W 80+ Platinum",
+        "brand": "Seasonic",
+        "price": 159.99,
+        "wattage": 850,
+        "efficiency": "80+ Platinum",
+        "modular": "Fully Modular"
+      },
+      {
+        "name": "Cooler Master MWE Gold 550W 80+ Gold",
+        "brand": "Cooler Master",
+        "price": 79.99,
+        "wattage": 550,
+        "efficiency": "80+ Gold",
+        "modular": "Semi-Modular"
+      }
+    ],
+    "cases": [
+      {
+        "name": "NZXT H510",
+        "brand": "NZXT",
+        "price": 69.99,
+        "type": "Mid Tower",
+        "color": "Black",
+        "motherboard_support": ["Mini-ITX", "Micro-ATX", "ATX"]
+      },
+      {
+        "name": "Corsair iCUE 4000X RGB",
+        "brand": "Corsair",
+        "price": 129.99,
+        "type": "Mid Tower",
+        "color": "Black",
+        "motherboard_support": ["Mini-ITX", "Micro-ATX", "ATX"]
+      },
+      {
+        "name": "Fractal Design Meshify C",
+        "brand": "Fractal Design",
+        "price": 99.99,
+        "type": "Mid Tower",
+        "color": "Black",
+        "motherboard_support": ["Mini-ITX", "Micro-ATX", "ATX"]
+      },
+      {
+        "name": "Phanteks Eclipse P400A",
+        "brand": "Phanteks",
+        "price": 89.99,
+        "type": "Mid Tower",
+        "color": "White",
+        "motherboard_support": ["Mini-ITX", "Micro-ATX", "ATX", "E-ATX"]
+      }
+    ]
+  }
+  

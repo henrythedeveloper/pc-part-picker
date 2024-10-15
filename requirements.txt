@@ -1,0 +1,10 @@
+streamlit
+langchain
+langchain-community
+langchain-nvidia-ai-endpoints
+validators
+requests
+faiss-cpu
+arxiv
+pymupdf
+rich
