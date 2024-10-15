@@ -224,18 +224,18 @@ Configures the language model used for generating assistant responses.
 	- Streamlit automatically loads secrets from this file, making them accessible via `st.secrets`.
 - **Example `utils.py` Implementation**:
   ```python
-  import streamlit as st
-from langchain.chat_models import ChatOpenAI  # Adjust based on your LLM
-
-def configure_llm():
-    nvidia_api_key = st.secrets["api_keys"]["nvidia_api_key"]
-    llm = ChatOpenAI(
-        openai_api_key=nvidia_api_key,
-        model_name="gpt-3.5-turbo",  # Replace with your model
-        temperature=0.7,
-        max_tokens=1024
-    )
-    return llm
+	import streamlit as st
+	from langchain.chat_models import ChatOpenAI  # Adjust based on your LLM
+	
+	def configure_llm():
+	nvidia_api_key = st.secrets["api_keys"]["nvidia_api_key"]
+	llm = ChatOpenAI(
+	openai_api_key=nvidia_api_key,
+	model_name="gpt-3.5-turbo",  # Replace with your model
+	temperature=0.7,
+	max_tokens=1024
+	)
+	return llm
     ```
 #### **Note**:
 - Adjust the model configuration based on the LLM you're using.
