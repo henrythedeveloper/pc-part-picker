@@ -173,7 +173,24 @@ This module is used by `suggestion.py` to access the available PC components. It
 
 ---
 
-### **5. `components_data.json`**
+### **5. `components/retrieval.py`**
+
+#### **Purpose**: 
+Handles the retrieval of affordable PC components based on user budget and preferences.
+#### **Overview**:
+
+- **Imports**:
+    - `load_components` from `components.data_loader` to access component data.
+- **Functionality**:
+    - Defines `get_affordable_components()` to retrieve affordable components based on the user’s budget.
+    - Applies user preferences to filter components (e.g., by brand).
+#### **Usage**:
+
+This module is used by `chat_interface.py` to generate component suggestions based on the user's budget. It retrieves components from the data and filters them based on the user's preferences and remaining budget.
+
+---
+
+### **6. `components_data.json`**
 
 #### **Purpose**:
 Stores data about available PC components, including CPUs, motherboards, GPUs, RAM, storage devices, power supplies, and cases.
@@ -206,7 +223,7 @@ This file is read by `data_loader.py` to provide component information to the re
 
 ---
 
-### **6. `utils.py`**
+### **7. `utils.py`**
 
 #### **Purpose**:
 Configures the language model used for generating assistant responses.
@@ -243,7 +260,7 @@ Configures the language model used for generating assistant responses.
 
 ---
 
-### **7. `requirements.txt`**
+### **8. `requirements.txt`**
 
 #### **Purpose**:
 Lists all the Python libraries and dependencies required to run the application.
