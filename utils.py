@@ -39,56 +39,22 @@ def display_msg(msg, author):
     st.session_state.messages.append({"role": author, "content": msg})
     st.chat_message(author).write(msg)
 
-def choose_custom_nvidia_key():
-    nvidia_api_key = st.sidebar.text_input(
-        label="NVIDIA API Key",
-        type="password",
-        placeholder="nvapi-...",
-        key="SELECTED_NVIDIA_API_KEY"
-    )
-    if not nvidia_api_key:
-        st.error("Please add your NVIDIA API key to continue.")
-        st.info("Obtain your key from this link: https://developer.nvidia.com/nvidia-ai-cloud-services")
-        st.stop()
-
-    # Replace with available NVIDIA models if any
-    models = ["mistralai/mixtral-8x7b-instruct-v0.1"]
-    model = st.sidebar.selectbox(
-        label="Model",
-        options=models,
-        key="SELECTED_NVIDIA_MODEL"
-    )
-    return model, nvidia_api_key
 
 def configure_llm():
     available_llms = [
         "mistralai/mixtral-8x7b-instruct-v0.1",
-        "use your NVIDIA API key"
     ]
-    llm_opt = st.sidebar.radio(
-        label="LLM",
-        options=available_llms,
-        key="SELECTED_LLM"
-    )
+    llm_opt = "mistralai/mixtral-8x7b-instruct-v0.1"
 
     if llm_opt == "mistralai/mixtral-8x7b-instruct-v0.1":
         nvidia_api_key = st.secrets.get("NVIDIA_API_KEY", "")
         if not nvidia_api_key:
-            st.error("Please set your NVIDIA API key in Streamlit secrets or select 'use your NVIDIA API key' to enter it manually.")
+            st.error("Please set your NVIDIA API key in Streamlit secrets to use this LLM.")
             st.stop()
         llm = ChatNVIDIA(
             model="mistralai/mixtral-8x7b-instruct-v0.1",
             api_key=nvidia_api_key,
             temperature=0.7,
-            max_tokens=1024
-        )
-    elif llm_opt == "use your NVIDIA API key":
-        model, nvidia_api_key = choose_custom_nvidia_key()
-        llm = ChatNVIDIA(
-            model=model,
-            api_key=nvidia_api_key,
-            temperature=0.5,
-            top_p=1,
             max_tokens=1024
         )
     else:

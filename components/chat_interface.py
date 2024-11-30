@@ -20,11 +20,11 @@ def chat_with_bot():
     budget_input = st.number_input("Enter your budget in USD", min_value=0.0, value=1000.0)
     st.session_state["budget"] = budget_input
 
-    brand_preference = st.selectbox("Preferred CPU Brand (optional)", options=["No Preference", "Intel", "AMD"])
-    if brand_preference != "No Preference":
-        st.session_state["preferences"]["brand"] = brand_preference
-    else:
-        st.session_state["preferences"].pop("brand", None)
+    # brand_preference = st.selectbox("Preferred CPU Brand (optional)", options=["No Preference", "Intel", "AMD"])
+    # if brand_preference != "No Preference":
+    #     st.session_state["preferences"]["brand"] = brand_preference
+    # else:
+    #     st.session_state["preferences"].pop("brand", None)
 
     # Suggest a build
     build, remaining_budget = suggest_build(st.session_state["budget"], st.session_state["preferences"])
@@ -39,7 +39,7 @@ def chat_with_bot():
         st.write(f"**Total Price:** ${total_price:.2f}")
         st.write(f"**Remaining Budget:** ${remaining_budget:.2f}")
     else:
-        st.write("Unable to suggest a build within your budget and preferences.")
+        st.write("Unable to suggest a build within your budget")
 
     # User prompt
     user_input = st.text_input("Ask any questions or request changes to the build:", key="user_input")
