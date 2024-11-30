@@ -52,6 +52,7 @@ Welcome to the **PC Part Picker**! This application helps you build your own cus
 
 4. **Set Up the NVIDIA API Key**
 The application requires an NVIDIA API key to function. You need to add this API key to the application securely.
+You can get the api for this model here: https://build.nvidia.com/mistralai/mixtral-8x7b-instruct
 
   Steps:
   - Create a `.streamlit` Folder
