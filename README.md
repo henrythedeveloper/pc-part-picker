@@ -65,8 +65,9 @@ The application requires an NVIDIA API key to function. You need to add this API
 
   ```bash
   touch .streamlit/secrets.toml
-  ``` 
-  **Note**: Replace `"your_actual_api_key_here"` with your actual NVIDIA API key.
+  ```
+  - On the first line of that file add `NVIDIA_API_KEY=""` and enter the NVIDIA API KEY 
+  **Note**: Replace `"NVIDIA_API_KEY"` with your actual NVIDIA API key.
   **Important**: Do not commit your `secrets.toml` file to version control (e.g., GitHub) to keep your API key secure.
 
 5. **Run the Application**
